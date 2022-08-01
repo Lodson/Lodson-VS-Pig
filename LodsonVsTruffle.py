@@ -20,7 +20,7 @@ for k in pos: pos[k].update((x, y*1/len(pos[k])) for x, y in pos[k].items()) # W
 # 0,75 = 0,5 (50%) * 30 (total tickers) / 20 (total tickers being short)
 
 # Same goes for the long position being 30% of total portfolio:
-# 0,9 = 0,3 (30%) * 30 (total tickers) / 10 (total tickers being short)
+# 0,9 = 0,3 (30%) * 30 (total tickers) / 10 (total tickers being long)
 
 lodson = pd.DataFrame.from_dict(pos,orient='index').fillna(0.0) 
 lodson.index.name = 'Date'
